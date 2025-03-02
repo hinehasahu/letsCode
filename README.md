@@ -182,8 +182,4 @@ Click the Logout button in the Dashboard to sign out.
 
 Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request.
 
-📞 Contact
-
-📧 Email: your-email@example.com🔗 GitHub: your-github-link
-
 🚀 Start your wellness journey today! 🌿
