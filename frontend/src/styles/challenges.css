@@ -1,0 +1,220 @@
+/* Container Styling */
+.challenges-container {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E3F2FD, #FFFDE7); /* Light blue to soft yellow */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.challenges-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2E7D32; /* Deep Green */
+}
+
+/* User ID Section */
+.user-id-section p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.user-id-section button {
+  background: #FF9800;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.user-id-section button:hover {
+  background: #E65100;
+  transform: scale(1.1);
+}
+
+/* Fetch Buttons */
+.fetch-button {
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.fetch-button:hover {
+  background: linear-gradient(135deg, #388E3C, #66BB6A);
+  transform: scale(1.1);
+}
+
+/* Create Challenge Form */
+.create-challenge-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  width: 80%;
+  max-width: 500px;
+}
+
+.create-challenge-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1B5E20;
+}
+
+.create-challenge-form input,
+.create-challenge-form textarea,
+.create-challenge-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.create-button:hover {
+  background: #388E3C;
+  transform: scale(1.1);
+}
+
+/* Challenges List */
+.challenges-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+}
+
+.challenge-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.challenge-item:hover {
+  transform: scale(1.02);
+}
+
+/* Challenge Details */
+.challenge-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #1B5E20;
+}
+
+.challenge-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.join-button {
+  background: linear-gradient(135deg, #FF9800, #F57C00);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.join-button:hover {
+  background: linear-gradient(135deg, #E65100, #FB8C00);
+  transform: scale(1.1);
+}
+
+.complete-button {
+  background: linear-gradient(135deg, #3F51B5, #5C6BC0);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.complete-button:hover {
+  background: linear-gradient(135deg, #283593, #3949AB);
+  transform: scale(1.1);
+}
+
+/* Success and Error Messages */
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Completed Message */
+.completed-message {
+  color: #4CAF50;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .challenges-container {
+    padding: 50px 10px;
+  }
+
+  .challenges-list {
+    width: 100%;
+  }
+
+  .challenge-item {
+    padding: 15px;
+  }
+
+  .challenge-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .challenge-item button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}

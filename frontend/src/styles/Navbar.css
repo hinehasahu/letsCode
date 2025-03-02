@@ -1,0 +1,135 @@
+/* Navbar Container */
+.navbar {
+  background: linear-gradient(135deg, #2E7D32, #1B5E20); /* Green gradient */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-around; /* Ensure even spacing */
+  align-items: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: static;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden; /* Prevents overflow */
+  flex-wrap: wrap; /* Ensures wrapping */
+}
+
+/* Navbar Title */
+.navbar h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  max-width: 100%; /* Prevents overflow */
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar h2 a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  display: block;
+}
+
+.navbar h2 a:hover {
+  color: #FFC107; /* Yellow on hover */
+}
+
+/* Navbar Links Container */
+.navbar div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensures wrapping when needed */
+  justify-content: center;
+  max-width: 100%; /* Prevents overflow */
+}
+
+/* Navbar Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  word-break: break-word; /* Prevents text overflow */
+}
+
+/* Hover Effect */
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Underline Animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: #FFC107; /* Yellow underline */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar div {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar h2 {
+    font-size: 1.5rem;
+    white-space: normal; /* Allows text wrapping */
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    padding: 8px 12px;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar div {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}

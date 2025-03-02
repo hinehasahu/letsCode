@@ -1,0 +1,148 @@
+/* Container Styling */
+.groups-container {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E3F2FD, #FFFDE7); /* Light blue to soft yellow gradient */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page Title */
+.groups-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2E7D32; /* Deep Green */
+}
+
+/* Create Group Section */
+.create-group {
+  margin-bottom: 20px;
+}
+
+.create-group input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-group button {
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.create-group button:hover {
+  background: linear-gradient(135deg, #388E3C, #66BB6A);
+  transform: scale(1.1);
+}
+
+/* User ID Section */
+.user-id-section {
+  margin-bottom: 20px;
+}
+
+.user-id-section input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #FFA000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Groups List */
+.groups-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+}
+
+.group-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.group-item:hover {
+  transform: scale(1.02);
+}
+
+/* Group Name */
+.group-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #1B5E20;
+}
+
+/* Group Details */
+.group-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.group-item button {
+  background: linear-gradient(135deg, #FF9800, #F57C00);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.group-item button:hover {
+  background: linear-gradient(135deg, #E65100, #FB8C00);
+  transform: scale(1.1);
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .groups-container {
+    padding: 50px 10px;
+  }
+
+  .groups-list {
+    width: 100%;
+  }
+
+  .group-item {
+    padding: 15px;
+  }
+
+  .group-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .group-item button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
